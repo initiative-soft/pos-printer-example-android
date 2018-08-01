@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/textInputEditText_textToPrint"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_textToPrint"
+        android:text="@string/test_sentence"
+        android:singleLine="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        app:layout_constraintStart_toEndOf="@id/textInputEditText_textToPrint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/button_addText"
+        android:text="@string/button_addText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckedTextView
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        app:layout_constraintTop_toBottomOf="@id/textInputEditText_textToPrint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/checkedTextView_bold"
+        android:text="@string/checkedTextView_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckedTextView
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        app:layout_constraintTop_toBottomOf="@id/checkedTextView_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/checkedTextView_underline"
+        android:text="@string/checkedTextView_underline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckedTextView
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/checkedTextView_underline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/checkedTextView_reversed"
+        android:text="@string/checkedTextView_reversed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/textInputEditText_lineFeedAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textInputEditText_lineFeedAmount"
+        android:hint="@string/hint_lineFeedAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkedTextView_reversed" />
+    <Button
+        app:layout_constraintStart_toEndOf="@id/textInputEditText_lineFeedAmount"
+        app:layout_constraintTop_toBottomOf="@id/checkedTextView_reversed"
+        android:id="@+id/button_addLineFeed"
+        android:text="@string/button_addLineFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup_alignment"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/textInputEditText_lineFeedAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/radioButton_alignLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton_alignLeft" />
+        <RadioButton android:id="@+id/radioButton_alignCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton_alignCenter" />
+        <RadioButton android:id="@+id/radioButton_alignRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton_alignRight" />
+    </RadioGroup>
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup_alignment"
+        android:id="@+id/button_addCut"
+        android:text="@string/button_addCut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_addCut"
+        android:id="@+id/button_send"
+        android:text="@string/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

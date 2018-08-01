@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">pos-printer-example</string>
+    <string name="button_startDiscovery">Start discovery</string>
+    <string name="button_stopDiscovery">Stop discovery</string>
+    <string name="button_connect">Connect</string>
+    <string name="button_select">Select</string>
+    <string name="test_sentence">The quick brown fox jumps over the lazy dog</string>
+    <string name="hint_textToPrint">Text to print</string>
+    <string name="checkedTextView_bold">Bold</string>
+    <string name="checkedTextView_underline">Underline</string>
+    <string name="checkedTextView_reversed">Reversed</string>
+    <string name="checkedTextView_italic">Italic</string>
+    <string name="textInputEditText_lineFeedAmount">1</string>
+    <string name="hint_lineFeedAmount">Line feed amount</string>
+    <string name="button_addLineFeed">Add line feed</string>
+    <string name="button_addCut">Add cut</string>
+    <string name="button_send">Send</string>
+    <string name="button_addText">Add text</string>
+    
+    <string name="radioButton_alignLeft">Align left</string>
+    <string name="radioButton_alignCenter">Align center</string>
+    <string name="radioButton_alignRight">Align right</string>
+
+</resources>
